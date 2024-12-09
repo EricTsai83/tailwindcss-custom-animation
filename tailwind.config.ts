@@ -9,23 +9,6 @@ const config: Config = {
   theme: {
     extend: {
       keyframes: {
-        wave: {
-          "0%,  100%": {
-            transform: "rotate(0deg)",
-          },
-          "20%": {
-            transform: "rotate(-25deg)",
-          },
-          "40%": {
-            transform: "rotate(10deg)",
-          },
-          "60%": {
-            transform: "rotate(-25deg)",
-          },
-          "80%": {
-            transform: "rotate(10deg)",
-          },
-        },
         "fade-out": {
           "0%": { opacity: "1" },
           "100%": { opacity: "0" },
@@ -59,16 +42,12 @@ const config: Config = {
         },
       },
       animation: {
-        wave: "wave 560ms ease-in-out",
         wiggle: "wiggle 1s ease-in-out infinite", // animate-[wiggle_1s_ease-in-out_infinite]
         shake: "shake 0.3s linear infinite",
         "shift-left": "shiftLeft 0.5s ease-in-out forwards",
         "scale-up": "scale-up 0.5s ease-in-out forwards",
         "scale-down": "scale-down 0.5s ease-in-out forwards",
         "fade-out": "fade-out 1s ease-in-out",
-      },
-      transformOrigin: {
-        custom: "130px 106px",
       },
     },
   },
